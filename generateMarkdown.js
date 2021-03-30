@@ -27,7 +27,7 @@ ${data.description}
 
 ## Installation
 
-${data.installation}
+${data.install}
 
 ## Tests
 

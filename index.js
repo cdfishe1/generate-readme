@@ -12,9 +12,31 @@ const promptUser = () => {
         name: 'title'},
 
         {type: 'input',
-        message: 'Describe your project',
+        message: 'Describe your project.',
         name: 'description'
         },
+
+        {type: 'input',
+        message: 'How do you install your project?',
+        name: 'install'
+        },
+
+        {type: 'input',
+        message: 'What tests run with your project?',
+        name: 'tests'
+        },
+
+        {type: 'input',
+        message: 'Who are the contributors to your project?',
+        name: 'contributors'
+        },
+
+        {type: 'input',
+        message: 'How should users contact you for questions?',
+        name: 'contact'
+        },
+
+
     ]);
 };
 
