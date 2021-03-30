@@ -27,22 +27,21 @@ ${data.description}
 
 ## Installation
 
-This app requires the installation of inquirer from NPM, as well as the fs and util modules.
-
+${data.installation}
 
 ## Tests
 
-Generates 0 errors on load or through execution.
+${data.tests}
 
 ## Contributing
 
-### ${data.contributers}
+${data.contributors}
 
 ## License
 ### ${data.license}
 
 ## Questions
-### Contact cdfishe1@gmail.com
+${data.contact}
   `
 }
 

@@ -5,19 +5,6 @@ const fs = require('fs');
 const util = require('util');
 const writeFileAsync = util.promisify(fs.writeFile);
 
-const questions = [
-    {type: 'input',
-    message: 'What is the title of the project?',
-    name: 'title'},
-
-    {type: 'input',
-    message: 'Describe your project',
-    name: 'description'
-    },
-
-
-];
-
 const promptUser = () => {
     return inquirer.prompt([
         {type: 'input',

@@ -1,13 +1,13 @@
 {
-  "name": "static-site",
+  "name": "Generate Readme",
   "version": "1.0.0",
-  "description": "",
+  "description": "This app generates a readme.md file based on user input.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Charles Fisher",
+  "license": "MIT",
   "dependencies": {
     "inquirer": "^6.5.2"
   }
