@@ -22,6 +22,11 @@ const promptUser = () => {
         },
 
         {type: 'input',
+        message: 'How is your project used?',
+        name: 'usage'
+        },
+
+        {type: 'input',
         message: 'What tests run with your project?',
         name: 'tests'
         },

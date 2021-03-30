@@ -33,6 +33,10 @@ ${data.install}
 
 ${data.tests}
 
+## Usage
+
+${data.usage}
+
 ## Contributing
 
 ${data.contributors}
