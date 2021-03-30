@@ -45,7 +45,8 @@ ${data.contributors}
 ### ${data.license}
 
 ## Questions
-${data.contact}
+* ${data.github}
+* ${data.email}
   `
 }
 

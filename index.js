@@ -12,7 +12,7 @@ const promptUser = () => {
         name: 'title'},
 
         {type: 'input',
-        message: 'Describe your project.',
+        message: 'Describe your project:',
         name: 'description'
         },
 
@@ -32,13 +32,18 @@ const promptUser = () => {
         },
 
         {type: 'input',
-        message: 'Who are the contributors to your project?',
+        message: 'How can people contribute to your project?',
         name: 'contributors'
         },
 
         {type: 'input',
-        message: 'How should users contact you for questions?',
-        name: 'contact'
+        message: 'What is your GitHub user name?',
+        name: 'github'
+        },
+
+        {type: 'input',
+        message: 'What is your email address?',
+        name: 'email'
         },
 
 
