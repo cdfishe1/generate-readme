@@ -45,8 +45,8 @@ ${data.contributors}
 ### ${data.license}
 
 ## Questions
-* ${data.github}
-* ${data.email}
+* [${data.github}](https://github.com/${data.github})
+* [${data.email}](mailto:${data.email})
   `
 }
 
