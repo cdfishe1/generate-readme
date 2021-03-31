@@ -12,7 +12,13 @@
 
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = data => {
-
+  let licenseLink = '';
+  
+  switch(data.license) {
+    case 'MIT': licenseLink = 'https://opensource.org/licenses/MIT';
+    break;
+    default: licenseLink = 'This app has no license.'
+  }
   
   return `
   # ${data.title}
@@ -44,7 +50,7 @@ ${data.usage}
 ${data.contributors}
 
 ## License
-### ${data.license}
+### [${data.license}](${licenseLink})
 
 ## Questions
 * [${data.github}](https://github.com/${data.github})
