@@ -1,17 +1,6 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-//function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-//function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-//function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
+//This function generates the markdown document
 const generateMarkdown = data => {
+  //This switch case takes the input of the license prompts and assigns a url to the proper license
   let licenseLink = '';
   
   switch(data.license) {
@@ -30,10 +19,12 @@ const generateMarkdown = data => {
     default: licenseLink = 'This app has no license.'
   }
   
+  //The beginning of the markdown document creation
   return `
-  [![Generic badge](https://img.shields.io/badge/license-${data.license}-<COLOR>.svg)](#license)
-  # ${data.title}
+[![Generic badge](https://img.shields.io/badge/license-${data.license}-<COLOR>.svg)](#license)
+# ${data.title}
 
+## Description
 ${data.description}
 
 ## Table of Contents
@@ -45,27 +36,23 @@ ${data.description}
 * [Questions](#questions)
 
 ## Installation
-
 ${data.install}
 
 ## Tests
-
 ${data.tests}
 
 ## Usage
-
 ${data.usage}
 
 ## Contributing
-
-${data.contributors}
+${data.contribute}
 
 ## License
-### [${data.license}](${licenseLink})
+### This app is licensed under the [${data.license}](${licenseLink}) license.
 
 ## Questions
-* [${data.github}](https://github.com/${data.github})
-* [${data.email}](mailto:${data.email})
+* GitHub: [${data.github}](https://github.com/${data.github})
+* Email: [${data.email}](mailto:${data.email})
   `
 }
 
