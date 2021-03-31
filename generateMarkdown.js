@@ -26,11 +26,12 @@ const generateMarkdown = data => {
 
     case 'BSD3': licenseLink = 'https://opensource.org/licenses/BSD-3-Clause';
     break;
-    
+
     default: licenseLink = 'This app has no license.'
   }
   
   return `
+  [![Generic badge](https://img.shields.io/badge/license-${data.license}-<COLOR>.svg)](#license)
   # ${data.title}
 
 ${data.description}
