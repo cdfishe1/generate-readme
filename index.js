@@ -61,7 +61,7 @@ const promptUser = () => {
 // Function to intialize the app
 const init = () => {
     promptUser()
-      .then((answers) => writeFileAsync('README-demo.md', generateMarkdown(answers)))
+      .then((answers) => writeFileAsync('README.md', generateMarkdown(answers)))
       .then(() => console.log('Successfully wrote to README.md'))
       .catch((err) => console.error(err));
   };
