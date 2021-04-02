@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+//Packages and modules needed for this application
 const generateMarkdown = require('./generateMarkdown.js');
 const inquirer = require('inquirer');
 const fs = require('fs');
@@ -47,21 +47,18 @@ const promptUser = () => {
         },
 
         {
-            name: "license",
-            type: "list",
-            message: "Choose your license:",
-            choices: ["MIT", "Apache", "GPL", "BSD3"],
-          },
+        name: "license",
+        type: "list",
+        message: "Choose your license:",
+        choices: ["MIT", "Apache", "GPL", "BSD3"],
+        },
 
 
     ]);
 };
 
 
-// TODO: Create a function to write README file
-//function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
+// Function to intialize the app
 const init = () => {
     promptUser()
       .then((answers) => writeFileAsync('README.md', generateMarkdown(answers)))
