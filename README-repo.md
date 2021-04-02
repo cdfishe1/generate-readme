@@ -2,7 +2,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/cdfishe1/generate-readme)
 ![GitHub top language](https://img.shields.io/github/languages/top/cdfishe1/generate-readme)
 
-# Weather App
+# Generate Readme
 
 Generates a README.md file based upon user prompts using inquirer npm in node.js.
 
@@ -14,10 +14,10 @@ Generates a README.md file based upon user prompts using inquirer npm in node.js
 * [Credits](#credits)
 * [License](#license)
 
-## Generate Readme
+## Generate Readme Demo
 
-### Screencast on mobile
-![Screencast on mobile](assets/images/demo.gif)
+### YouTube video demonstration
+![YouTube Video](assets/images/demo.gif)
 
 ## Repository
 
